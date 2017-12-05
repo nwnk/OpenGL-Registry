@@ -28,8 +28,8 @@ Status
 
 Version
 
-    Last Modified Date:         2017-03-10
-    Author Revision:            2
+    Last Modified Date:         2017-12-05
+    Author Revision:            3
 
 Number
 
@@ -113,6 +113,9 @@ Errors for GLX
 
     BadMatch is generated if the GLX_CONTEXT_OPENGL_NO_ERROR_ARB is TRUE at
     the same time as a debug or robustness context is specified.
+
+    BadValue is generated if an indirect no-error context was requested
+    and the implementation does not support this combination.
 
 New State
 
