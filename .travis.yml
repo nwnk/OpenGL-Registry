@@ -1,0 +1,11 @@
+language: c
+
+matrix:
+    include:
+        - os: linux
+          dist: trusty
+
+script:
+    - git remote add upstream https://github.com/KhronosGroup/OpenGL-Registry.git
+    - git fetch upstream
+    - git diff-tree --exit-code -p ..upstream/master xml/
